@@ -1,1 +1,0 @@
-to commit add header.scss file, styled logo-div and menu-hamburger
