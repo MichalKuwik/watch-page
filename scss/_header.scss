@@ -1,0 +1,83 @@
+@import 'variables';
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:0.5rem;
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+  & .header__logo-div{
+    position: relative;
+    width:10%;
+    text-align: center;
+    z-index: 1;
+    margin-left:2rem;
+  & .material-icons{
+      font-size:1.5rem;
+    }
+  & .header__logo-description{
+    font-weight: 600;
+    z-index: 9999;
+    
+    & .header__logo-title{
+      font-weight: 400;
+      color: $yellow_color;
+    }
+   }
+   & .header__logo-decor-line1{
+     position: absolute;
+     top:75%;
+     left:10%;
+     width:40%;
+     height: 10%;
+     background: $yellow_color;
+     z-index:-1;
+   }  
+  }
+  & .header__menu-hamburger-div{
+    margin-right: 4rem;
+    width:50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999999;
+
+    & div:nth-child(1){
+      width:100%;
+      background: #000;
+      height: 3px;
+      border-radius: 20px;
+      transition: all 0.4s linear;
+      
+      &.active{
+          width:100%;
+          transform: rotateZ(405deg) translate(5px,10px);
+      }
+    }
+    
+    & div:nth-child(2){
+      width:70%;
+      height: 3px;
+      background: #000;
+      border-radius: 20px;
+      transition: all 0.3s linear;
+      &.active{
+        opacity:0;
+    }
+    }
+    
+    & div:nth-child(3){
+      width:100%;
+      height: 3px;
+      background: #000;
+      border-radius: 20px;
+      transition: all 0.4s linear;
+      
+      &.active{
+        width:100%;
+        transform:rotateZ(-405deg) translate(10px,-13px);
+      }
+    }
+  }
+}
