@@ -1,0 +1,51 @@
+@import 'variables';
+
+.main__section1{
+  background-image: url('../img/gb3.png');
+  background-position: center;
+  background-size:cover;
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .main__section1__article1{
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    align-items: center;
+    & .main__section2-header{
+      position: relative;
+      font-weight: 700;
+      font-size:4rem;
+      text-align: center;
+      
+      & .main__section2-lineDecor{
+        position: absolute;
+        top:60%;
+        left:20%;
+        background: $yellow_color;
+        width:90%;
+        height: 20%;
+        z-index: -999;
+      }
+    }
+    & .main__section2-btn{
+      font-size:2rem;
+      padding:10px 15px;
+      border:2px solid $yellow_color;
+      background: none;
+      width:70%;
+      margin-top:2rem;
+      @include ease;
+
+      &:hover{
+        cursor: pointer;
+        background: $yellow_color;
+        color:$white_color;
+      }
+    }
+  }
+}
+

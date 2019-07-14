@@ -5,18 +5,22 @@
   justify-content: space-between;
   align-items: center;
   margin-top:0.5rem;
-  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
+  background: $bg1_color;
   & .header__logo-div{
     position: relative;
     width:10%;
     text-align: center;
     z-index: 1;
     margin-left:2rem;
+    padding-top:0.5rem;
   & .material-icons{
       font-size:1.5rem;
+      color:$white_color;
     }
   & .header__logo-description{
     font-weight: 600;
+    color:$white_color;
     z-index: 9999;
     
     & .header__logo-title{
