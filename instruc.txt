@@ -1,1 +1,1 @@
-commit 'end basic structure html for main tag"
+commit 'styled section1"

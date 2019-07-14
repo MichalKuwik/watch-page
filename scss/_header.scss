@@ -1,13 +1,17 @@
 @import 'variables';
 
 .header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top:0.5rem;
-  box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
-  background: $bg1_color;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  position: fixed;
+  width:100%;
+  height: 60px;
+  background: red;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  background: rgba(51,51,51,0.8);
   & .header__logo-div{
+    float: left;
     position: relative;
     width:10%;
     text-align: center;
@@ -31,15 +35,16 @@
    & .header__logo-decor-line1{
      position: absolute;
      top:75%;
-     left:10%;
-     width:40%;
+     left:20%;
+     width:30%;
      height: 10%;
      background: $yellow_color;
      z-index:-1;
    }  
   }
   & .header__menu-hamburger-div{
-    margin-right: 5rem;
+    margin:1rem 4rem 0 0;
+    float:right;
     width:50px;
     height: 30px;
     display: flex;
