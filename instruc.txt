@@ -1,1 +1,1 @@
-commit 'styled section1"
+commit 'create section2 styled them, and ad file section2.scss"
