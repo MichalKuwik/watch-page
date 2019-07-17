@@ -1,8 +1,12 @@
-$yellow_color: #EFCF25;
+$yellow_color: rgb(239, 207, 37);
 $white_color:#fff;
 $black_color:#000;
 $bg1_color: #333;
 
 @mixin ease {
   transition: all 0.5s ease-out;
+}
+
+@mixin rubber {
+  transition: all 0.4s cubic-bezier(.32,-0.61,1,.69);
 }

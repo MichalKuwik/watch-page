@@ -1,1 +1,1 @@
-commit 'create section2 styled them, and ad file section2.scss"
+commit 'add footer to layout.footer was complited"
