@@ -1,1 +1,1 @@
-commit 'add footer to layout.footer was complited"
+commit 'add few files to mediaqueires for 3sections,footer add file config.scss and complited RWD for XL and LG query"

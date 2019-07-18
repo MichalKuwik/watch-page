@@ -1,0 +1,24 @@
+
+// media queires Lg
+@include mediaLg{
+  .main{
+    & .main__section2{
+      & .main__section2__article{
+        & .section2__article-description{
+          font-size:2.5rem;
+
+          &::after{
+            width:40%;
+          }
+        }
+        & .section2__article__container{
+          & .section2__article-imgDiv{
+            & .section2__article-text{
+              font-size:0.66rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

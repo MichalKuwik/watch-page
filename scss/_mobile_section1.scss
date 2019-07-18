@@ -1,0 +1,24 @@
+
+//media MD
+@include mediaMd{
+  .main{
+    & .main__section1{
+      width:100%;
+    }
+  }
+}
+
+
+// media queries XL
+
+@include mediaXL{
+  .main{
+    & .main__section1{
+      & .main__section1__article2{
+        & .main__section2-img{
+          width:110%;
+        }
+      }
+    }
+  }
+}

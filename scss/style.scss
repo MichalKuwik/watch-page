@@ -4,6 +4,7 @@
 @import 'section2';
 @import 'section3';
 @import 'footer';
+@import 'config';
 
 
 //google font montserrat
@@ -22,3 +23,8 @@ body{
   width:100vw;
   overflow-x: hidden;
 }
+
+@import 'mobile_section1';
+@import 'mobile_section2';
+@import 'mobile_section3';
+@import 'mobile_footer';
