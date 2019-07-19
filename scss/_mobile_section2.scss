@@ -1,3 +1,25 @@
+//media MD
+@include mediaMd{
+  .main{
+    & .main__section2{
+      & .main__section2__article{
+        & .section2__article-description{
+          font-size:2rem;
+          &::after{
+            width:45%;
+          }
+        }
+        & .section2__article__container{
+          
+          & .section2__article-imgDiv{
+            width:20%;
+            height: 20%;
+          }
+        }
+      }
+    }
+  }
+}
 
 // media queires Lg
 @include mediaLg{

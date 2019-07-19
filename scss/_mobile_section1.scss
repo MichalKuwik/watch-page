@@ -4,6 +4,26 @@
   .main{
     & .main__section1{
       width:100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & .main__section1__article1{
+        width:50%;
+        height: 50%;
+        justify-content: flex-end;
+        & .main__section2-header{
+          font-size:3rem;
+        }
+        & .main__section2-btn{
+          font-size:1.5rem;
+          padding:10px 5px;
+        }
+      }
+      & .main__section1__article2{
+        width:25%;
+        height: 50%;
+        justify-content: center;
+      }
     }
   }
 }

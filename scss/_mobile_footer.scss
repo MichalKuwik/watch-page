@@ -1,4 +1,14 @@
-
+//media md
+@include mediaMd{
+  .footer{
+    & .footer__author-name{
+      font-size:1rem;
+    }
+    & .footer__social-media{
+      width:30%;
+    }
+  }
+}
 // media Lg queires
 @include mediaLg{
   .footer{
