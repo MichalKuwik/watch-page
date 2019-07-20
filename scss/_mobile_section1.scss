@@ -1,26 +1,73 @@
+//media sm
+@include mediaSm {
+  .main {
+    min-width: 100vw;
+
+    & #main__section1 {
+      min-width: 108vw;
+
+      background-size: cover;
+      // min-height: 100vh;
+
+      & #main__section1__article1 {
+        // min-height: 70%;
+        min-width: 100vw;
+        align-items: center;
+        justify-content: flex-end;
+
+        & .main__section2-header {
+          font-size: 2.5rem;
+          font-weight: 300;
+
+          & .main__section2-lineDecor {
+            width: 80%;
+            top: 3%;
+            left: 10%;
+            height: 50%;
+          }
+        }
+
+        & .main__section2-btn {
+          width: 80%;
+          margin-top: 1rem;
+          padding: 8px 5px;
+        }
+      }
+
+      & #main__section1__article2 {
+        width: 40%;
+      }
+    }
+  }
+}
+
 
 //media MD
-@include mediaMd{
-  .main{
-    & .main__section1{
-      width:100%;
+@include mediaMd {
+  .main {
+    & .main__section1 {
+      width: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      & .main__section1__article1{
-        width:50%;
+
+      & .main__section1__article1 {
+        width: 50%;
         height: 50%;
         justify-content: flex-end;
-        & .main__section2-header{
-          font-size:3rem;
+
+        & .main__section2-header {
+          font-size: 3.5rem;
         }
-        & .main__section2-btn{
-          font-size:1.5rem;
-          padding:10px 5px;
+
+        & .main__section2-btn {
+          font-size: 1.5rem;
+          padding: 10px 5px;
         }
       }
-      & .main__section1__article2{
-        width:25%;
+
+      & .main__section1__article2 {
+        width: 25%;
         height: 50%;
         justify-content: center;
       }
@@ -31,12 +78,12 @@
 
 // media queries XL
 
-@include mediaXL{
-  .main{
-    & .main__section1{
-      & .main__section1__article2{
-        & .main__section2-img{
-          width:110%;
+@include mediaXL {
+  .main {
+    & .main__section1 {
+      & .main__section1__article2 {
+        & .main__section2-img {
+          width: 110%;
         }
       }
     }

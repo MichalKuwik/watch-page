@@ -1,18 +1,57 @@
-//media MD
-@include mediaMd{
-  .main{
-    & .main__section2{
-      & .main__section2__article{
-        & .section2__article-description{
-          font-size:2rem;
-          &::after{
-            width:45%;
+//media sm
+@include mediaSm {
+  .main {
+    & .main__section2 {
+      min-height: 100vh;
+      min-width: 108%;
+
+      & .main__section2__article {
+        & #section2__article-description {
+          font-size: 2rem;
+          margin-bottom: 5rem;
+          margin: 1rem 1rem;
+
+          &::after {
+            width: 90%;
+            left: 10%;
           }
         }
-        & .section2__article__container{
-          
-          & .section2__article-imgDiv{
-            width:20%;
+
+        & .section2__article__container {
+          flex-direction: column;
+          align-items: center;
+
+          & #section2__article-imgDiv {
+            width: 70%;
+            margin-bottom: 4rem;
+
+            & .section2__article__title {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//media MD
+@include mediaMd {
+  .main {
+    & .main__section2 {
+      & .main__section2__article {
+        & .section2__article-description {
+          font-size: 2rem;
+
+          &::after {
+            width: 45%;
+          }
+        }
+
+        & .section2__article__container {
+
+          & .section2__article-imgDiv {
+            width: 20%;
             height: 20%;
           }
         }
@@ -22,21 +61,22 @@
 }
 
 // media queires Lg
-@include mediaLg{
-  .main{
-    & .main__section2{
-      & .main__section2__article{
-        & .section2__article-description{
-          font-size:2.5rem;
+@include mediaLg {
+  .main {
+    & .main__section2 {
+      & .main__section2__article {
+        & .section2__article-description {
+          font-size: 2.5rem;
 
-          &::after{
-            width:40%;
+          &::after {
+            width: 40%;
           }
         }
-        & .section2__article__container{
-          & .section2__article-imgDiv{
-            & .section2__article-text{
-              font-size:0.66rem;
+
+        & .section2__article__container {
+          & .section2__article-imgDiv {
+            & .section2__article-text {
+              font-size: 0.66rem;
             }
           }
         }
