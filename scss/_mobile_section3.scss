@@ -1,32 +1,80 @@
+//media sm
+@include mediaSm {
+  .main {
+    & #main__section3 {
+      & .main__section3__header {
+        font-size: 2.3rem;
+      }
+
+      & .main__section3__article {
+        & .main__section3__article__txtCont {
+          & .main__section3__article__title {
+            font-size: 1.5rem;
+            padding: 15px 10px;
+            margin-top: 2rem;
+            text-align: center;
+          }
+
+          & .main__section3__article__item {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+
+          }
+        }
+
+        & .main__section3__article__map {
+          width: 90vw;
+          height: 50%;
+
+
+          & .main__section3__article__map-map {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 //media MD
-@include mediaMd{
-  .main{
-    & .main__section3{
-      & .main__section3__article{
+@include mediaMd {
+  .main {
+    & .main__section3 {
+      & .main__section3__article {
         flex-direction: column;
-        & .main__section3__article__txtCont{
-            width:90%;
-          & .main__section3__article__item{
-            & .article__item-imgDiv{
-              width:20%;
+
+        & .main__section3__article__txtCont {
+          width: 90%;
+
+          & .main__section3__article__item {
+            & .article__item-imgDiv {
+              width: 20%;
               height: 20%;
             }
-            & .article__item__texts{
-              font-size:1rem;
+
+            & .article__item__texts {
+              font-size: 1rem;
             }
           }
-          & .main__section3__article__item2{
+
+          & .main__section3__article__item2 {
             flex-direction: column;
-            & .main__section3__article__item{
-              border-bottom:1px solid $yellow_color;
+
+            & .main__section3__article__item {
+              border-bottom: 1px solid $yellow_color;
             }
           }
         }
-        & .main__section3__article__map{
-          width:70%;
+
+        & .main__section3__article__map {
+          width: 70%;
           height: 60vh;
-          margin-top:3rem;
+          margin-top: 3rem;
         }
       }
     }
@@ -35,20 +83,23 @@
 
 // media quries Lg
 @include mediaLg {
-  .main{
-    & .main__section3{
-      & .main__section3__article{
-        & .main__section3__article__txtCont{
-          & .main__section3__article__item{
-            padding:2rem;
-            & .article__item-imgDiv{
-              width:5%;
+  .main {
+    & .main__section3 {
+      & .main__section3__article {
+        & .main__section3__article__txtCont {
+          & .main__section3__article__item {
+            padding: 2rem;
+
+            & .article__item-imgDiv {
+              width: 5%;
             }
-            & .article__item__texts{
+
+            & .article__item__texts {
               font-size: 0.8rem;
-              margin-left:0.5rem;
-              & .article__item__texts__content{
-                font-size:0.8rem;
+              margin-left: 0.5rem;
+
+              & .article__item__texts__content {
+                font-size: 0.8rem;
               }
             }
           }

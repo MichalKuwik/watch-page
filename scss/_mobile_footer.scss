@@ -1,19 +1,47 @@
-//media md
-@include mediaMd{
-  .footer{
-    & .footer__author-name{
-      font-size:1rem;
+//media sm
+@include mediaSm {
+  .footer {
+    flex-direction: column;
+    min-height: 15vh;
+    justify-content: space-around;
+
+    & .footer__author-name {
+      text-align: center;
     }
-    & .footer__social-media{
-      width:30%;
+
+    & #footer__social-media {
+      width: 65%;
+      justify-content: space-around;
+      margin: 0;
+
+      & .footer__link {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+
+      }
     }
   }
 }
+
+//media md
+@include mediaMd {
+  .footer {
+    & .footer__author-name {
+      font-size: 1rem;
+    }
+
+    & .footer__social-media {
+      width: 30%;
+    }
+  }
+}
+
 // media Lg queires
-@include mediaLg{
-  .footer{
-    .footer__social-media{
-      width:25%;
+@include mediaLg {
+  .footer {
+    .footer__social-media {
+      width: 25%;
     }
   }
 }

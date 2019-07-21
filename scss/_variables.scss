@@ -7,6 +7,12 @@ $bg1_color: #333;
   transition: all 0.5s ease-out;
 }
 
-@mixin rubber {
-  transition: all 0.4s cubic-bezier(.32,-0.61,1,.69);
+@mixin nav {
+  transition: all 0.8s cubic-bezier(0, 1.5, .09, .38);
 }
+
+@mixin rubber {
+  transition: all 0.4s cubic-bezier(.32, -0.61, 1, .69);
+}
+
+// 0,1.5,.09,.38
