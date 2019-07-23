@@ -39,18 +39,18 @@ function checkPosition() {
 window.addEventListener('scroll', checkPosition);
 
 // //function change img onclick
-// const watch_arr = ['./img/watch-light.png', './img/watch-dark.png', './img/watch.png'];
-// const img_div = document.getElementById('main__section2-img');
+const watch_arr = ['./img/watch-light.png', './img/watch-dark.png', './img/watch.png'];
+const img_div = document.getElementById('main__section2-img');
 
-// const dots = document.querySelectorAll('.main__section2-dot');
-// dots.forEach((dot, index) => {
-//   dot.addEventListener('click', function () {
-//     if (index === 0) {
-//       img_div.setAttribute('src', watch_arr[0]);
-//     } else if (index === 1) {
-//       img_div.setAttribute('src', watch_arr[1]);
-//     } else {
-//       img_div.setAttribute('src', watch_arr[2]);
-//     }
-//   })
-// })
+const dots = document.querySelectorAll('.main__section2-dot');
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', function () {
+    if (index === 0) {
+      img_div.setAttribute('src', watch_arr[0]);
+    } else if (index === 1) {
+      img_div.setAttribute('src', watch_arr[1]);
+    } else {
+      img_div.setAttribute('src', watch_arr[2]);
+    }
+  })
+})
