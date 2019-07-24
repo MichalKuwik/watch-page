@@ -1,1 +1,1 @@
-commit 'implement library scrollreveal using cdn.animate all eleemnts on the page"
+commit 'create menu,styled them"

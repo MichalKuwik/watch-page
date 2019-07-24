@@ -12,10 +12,56 @@
   @include nav;
 
   & .header__menu{
-    position:absolute;
-    top:20%;
-    bottom:0;
-    right:0;
+    // position: absolute;
+    // top:100%;
+    width:100%;
+    // right:0;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+      & .header__menu-container{
+        transform: translateY(40%);
+        width:100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+       & .header__menu-link{
+         position: relative;
+         color:$white_color;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-weight: 400;
+         font-size:1.2rem;
+         letter-spacing: 2px;
+         z-index: 9999;
+         @include ease;
+
+         &:hover{
+           font-weight: 600;
+           color:$black_color;
+         }
+
+         &::before{
+           position: absolute;
+           bottom:0;
+           content: '';
+           background: rgba($yellow_color,0.8);
+           height: 100%;
+           width: 0%;
+           z-index: -9999;
+          }
+          &:hover::before{
+            width:100%;
+            @include rubber;
+          }
+         
+         & .fas,.far{
+           margin-right:1rem;
+         }
+       }
+      }
   }
 
   &.is-hidden {
