@@ -15,4 +15,13 @@ $bg1_color: #333;
   transition: all 0.4s cubic-bezier(.32, -0.61, 1, .69);
 }
 
-// 0,1.5,.09,.38
+@keyframes item-anime{
+  from{
+    opacity:0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}

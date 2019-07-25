@@ -1,1 +1,1 @@
-commit 'create menu,styled them"
+commit 'animate menu ,and alive them in index.js, create new animation in variables.scss file"
