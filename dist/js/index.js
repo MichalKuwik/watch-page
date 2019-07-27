@@ -16,12 +16,16 @@ const menuActions = () => {
       line.classList.add('active');
       activeMenu = true;
     });
-    menu__items.forEach(item => {
-      item.classList.add('active__link');
-      activeMenu = true;
-    })
     menu.classList.add('active__menu');
     activeMenu = true;
+    menu__items.forEach(item => {
+      item.classList.add('active__link');
+      item.addEventListener('click',() => {
+        menu.classList.remove('active__menu')
+        lines.forEach(line=> line.classList.remove('active'));
+      })
+      activeMenu = true;
+    })
   } else {
     lines.forEach(line => {
       line.classList.remove('active');
@@ -68,7 +72,7 @@ const watch_arr = ['./img/watch-light.png', './img/watch-dark.png', './img/watch
 const img_div = document.getElementById('main__section2-img');
 const dots = document.querySelectorAll('.main__section2-dot');
 
-function initAllTime(){
+const initAllTime = () => {
   dots.forEach((dot, index) => {
     dot.addEventListener('click', function () {
       if (index === 0) {

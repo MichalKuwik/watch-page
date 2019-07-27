@@ -42,6 +42,11 @@
       box-shadow: 11px 17px 4px -4px rgba(0,0,0,0.46);
       @include ease;
 
+      & .main__section2-btn-text{
+        text-decoration: none;
+        color:$black_color;
+      }
+
       &:hover{
         cursor: pointer;
         background: $yellow_color;
