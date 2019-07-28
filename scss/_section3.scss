@@ -107,6 +107,7 @@
         position: absolute;
         left:20%;
         top:20%;
+        animation: pin-anime 1.3s ease-in-out 1s infinite both;
 
         & img{
           width:100%;

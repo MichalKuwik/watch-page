@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap");
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
+
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
 
 .header {
   position: fixed;
@@ -142,12 +158,20 @@
         transform: rotateZ(-405deg) translate(10px, -13px); }
 
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
 
 .main__section1 {
   background-image: url("../img/gb3.png");
@@ -228,12 +252,20 @@
         background: #805E1E; }
 
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
 
 .main__section2 {
   width: 100%;
@@ -301,12 +333,20 @@
         height: 7%; }
 
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
 
 .main__section3 {
   display: flex;
@@ -386,18 +426,27 @@
         height: 10%;
         position: absolute;
         left: 20%;
-        top: 20%; }
+        top: 20%;
+        animation: pin-anime 1.3s ease-in-out 1s infinite both; }
         .main__section3 .main__section3__article .main__section3__article__map .main__section3__article__map-pin img {
           width: 100%;
           height: 100%; }
 
 @keyframes item-anime {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20px); }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0); } }
+
+@keyframes pin-anime {
+  0% {
+    transform: translateY(0px) scale(1); }
+  50% {
+    transform: translateY(-40px) scale(1.4); }
+  100% {
+    transform: translateY(0px); } }
 
 .footer {
   display: flex;
