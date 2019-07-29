@@ -25,12 +25,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @include rubber;
-      & .fab{
-        white-space:inherit;
-      }
+      @include nav;
+      
       &:hover{
-        transform: scale(1.2);
+       background: darken($color: $bg1_color, $amount: 10);
       }
     }
   }

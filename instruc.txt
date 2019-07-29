@@ -1,0 +1,1 @@
+to ocmmit "add file gulpfile.js instal 2packages: gulp gulp-autoprefixer, next create file .babelrc and install 3packages for them, next cli commend to transpile code form ES5 to ES6, add autoprefixes thanks gulp"
