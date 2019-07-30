@@ -1,0 +1,11 @@
+In this project I used following technologies:
+-html,
+- gulp,
+-babel,
+-photoshop,
+- npm using packages:
+  -node-sass
+  -browserify,
+  -library scrollReveal
+  -library jquery
+-pure javaScript
